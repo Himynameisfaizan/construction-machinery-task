@@ -3,8 +3,18 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import PageHeader from "../../components/PageHeader";
 
+interface Product {
+  id: string;
+  name: string;
+  category: string;
+  status: string;
+  stock: string | number;
+  image?: string;
+}
+
+
 export default function ProductsPage() {
-  const [productsData, setProductsData] = useState([]);
+  const [productsData, setProductsData] = useState<Product[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Default Fallback Data (Agar localStorage khali ho)

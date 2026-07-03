@@ -1,9 +1,18 @@
 "use client";
 import { useState, useEffect } from "react";
 
+interface Product {
+  id: string;
+  name: string;
+  category: string;
+  status: string;
+  stock: string | number;
+  image?: string;
+}
+
 export default function AdminProducts() {
   const [showForm, setShowForm] = useState(false);
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   
   // Naya State Edit track karne ke liye

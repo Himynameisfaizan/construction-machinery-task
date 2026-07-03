@@ -1,9 +1,19 @@
 "use client";
 import { useState, useEffect } from "react";
 
+interface Blog {
+  id: string;
+  title: string;
+  category: string;
+  date?: string;
+  excerpt?: string;
+  image?: string;
+  content?: string;
+}
+
 export default function AdminBlogs() {
   const [showForm, setShowForm] = useState(false);
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const [editingId, setEditingId] = useState(null);
   
