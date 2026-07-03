@@ -16,6 +16,8 @@ export default function Navbar() {
     { name: "Contact Us", path: "/contact-us" },
   ];
 
+if (pathname.startsWith("/admin")) return null;
+
   return (
     // Light background with Glassmorphism (blur) effect for a premium feel
     <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">

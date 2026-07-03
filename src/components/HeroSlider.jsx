@@ -13,7 +13,7 @@ export default function HeroSlider() {
       title: "Premium Construction Machinery",
       subtitle: "Delivering world-class hydraulic solutions and heavy equipment for your toughest industrial challenges.",
       ctaText: "Explore Our Products",
-      ctaLink: "/products",
+      ctaLink: "/our-products",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function HeroSlider() {
       title: "Unmatched Hydraulic Power",
       subtitle: "Custom-engineered hydraulic press machines designed for precision, durability, and maximum efficiency.",
       ctaText: "Get a Quote",
-      ctaLink: "/contact",
+      ctaLink: "/contact-us",
     },
     {
       id: 3,
@@ -99,7 +99,7 @@ export default function HeroSlider() {
                   </svg>
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/contact-us"
                   className="inline-flex justify-center items-center px-8 py-4 text-base font-bold text-white bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:bg-white/20 hover:-translate-y-1 transition-all duration-300"
                 >
                   Contact Us

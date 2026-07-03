@@ -1,7 +1,12 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+    const pathname = usePathname();
+if (pathname.startsWith("/admin")) return null;
 
   return (
     <footer className="bg-slate-900 text-slate-300 pt-16 pb-8 border-t-4 border-blue-600">

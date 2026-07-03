@@ -1,6 +1,14 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 export default function Topbar() {
+
+    const pathname = usePathname();
+if (pathname.startsWith("/admin")) return null;
+
+
   return (
     <div className="bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">

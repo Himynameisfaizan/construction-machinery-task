@@ -12,7 +12,7 @@ export default function BottomCTA() {
             <p className="text-blue-200 text-lg">We Are Available For You 24/7.</p>
           </div>
           <Link 
-            href="/contact" 
+            href="/contact-us" 
             className="shrink-0 px-8 py-4 bg-white text-blue-800 font-black rounded-lg shadow-lg hover:bg-slate-100 hover:-translate-y-1 transition-all duration-300"
           >
             Contact Us Now
