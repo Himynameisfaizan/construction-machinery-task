@@ -9,7 +9,6 @@ export default function AdminLayout({ children }) {
     { name: "Dashboard", path: "/admin", icon: "📊" },
     { name: "Products", path: "/admin/products", icon: "⚙️" },
     { name: "Blogs", path: "/admin/blogs", icon: "🔧" },
-    { name: "Inquiries (Leads)", path: "/admin/inquiries", icon: "📩" },
   ];
 
   return (

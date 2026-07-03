@@ -26,10 +26,10 @@ export default function AdminDashboard() {
           <p className="text-slate-500 text-sm mt-1">Here is what's happening with your website today.</p>
         </div>
         <div className="flex gap-3">
-          <Link href="/admin/products/new" className="px-4 py-2 bg-slate-900 text-white font-semibold rounded-lg shadow-md hover:bg-slate-800 transition-colors text-sm">
+          <Link href="/admin/products" className="px-4 py-2 bg-slate-900 text-white font-semibold rounded-lg shadow-md hover:bg-slate-800 transition-colors text-sm">
             + Add Product
           </Link>
-          <Link href="/admin/blogs/new" className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors text-sm">
+          <Link href="/admin/blogs" className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors text-sm">
             + Write Blog
           </Link>
         </div>
